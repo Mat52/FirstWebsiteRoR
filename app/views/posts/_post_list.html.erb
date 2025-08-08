@@ -8,15 +8,6 @@
             <%= image_tag youtube_thumbnail(post.video_url),
                   class: "w-full h-full object-cover transition duration-300 group-hover:brightness-75" %>
           </div>
-
-          <!-- Center Play Button -->
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="bg-white/90 rounded-full p-3 shadow-md transition-transform duration-300 group-hover:scale-110">
-              <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M6 4l10 6-10 6V4z" />
-              </svg>
-            </div>
-          </div>
         <% end %>
       <div class="p-4 bg-white rounded-b-xl">
         <div class="flex items-center justify-between mb-2">

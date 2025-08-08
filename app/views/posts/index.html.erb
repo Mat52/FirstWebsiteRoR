@@ -2,4 +2,4 @@
 
 <% content_for :title, "Posts" %>
 
-<%= render render "post_list", locals: {posts: @posts}%>
+<%= render partial: "post_list", locals: {posts: @posts}%>

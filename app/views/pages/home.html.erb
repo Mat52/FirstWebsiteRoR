@@ -1,4 +1,20 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%= turbo_frame_tag "posts" do %>
 
-<%= render partial: "posts/post_list", locals: { posts: @posts }=%>
+  <!-- Hero Copywriting Section -->
+  <h1 class="text-4xl font-extrabold mb-4">
+    Learn Ruby on Rails 10X Faster than I did!
+  </h1>
+  <p class="text-lg mb-8">
+    I spend my time researching perfect solutions to everyday problems, so that You do not have to!  
+    Join 58 like-minded Ruby on Rails developers.
+  </p>
+
+</div>
+</section>
+
+<!-- Posts Grid -->
+<div id="posts" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8">
+  <%= render partial: "posts/post_list", locals: {posts: @posts}%>
+</div>
+
+<% end %>
